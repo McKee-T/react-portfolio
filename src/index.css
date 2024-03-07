@@ -80,7 +80,9 @@ code {
 }
 
 .about-me {
-  padding-top: var(--navbar-height); /* Adjust based on your navbar's height */
+  max-width: 90%;
+  margin: 0 auto;
+  padding:20px;
 }
 
 .profile-picture {
