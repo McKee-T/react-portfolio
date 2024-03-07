@@ -1,0 +1,190 @@
+:root {
+  --pale-azure: #69ddffff;
+  --light-sky-blue: #96cdffff;
+  --lavender-web: #d8e1ffff;
+  --pink-lavender: #dbbaddff;
+  --puce: #be92a2ff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--lavender-web); /* Background color for the body */
+  color: var(--puce); /* Default text color */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: var(--pale-azure); /* Color for code elements */
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between cards as needed */
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  width: 200px; /* Adjust based on desired size */
+  overflow: hidden;
+  background-color: var(--pink-lavender); /* Background color for project cards */
+  border: 2px solid var(--light-sky-blue); /* Border color for project cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding some shadow for depth */
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Consider using one of your palette colors with adjusted opacity */
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover .overlay {
+  height: 100%;
+}
+
+.links {
+  color: var(--pale-azure); /* Color for links on hover */
+  font-size: 20px;
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  margin: 10px 0; /* Adjust spacing between links */
+  color: inherit; /* Ensures links use the same color as .links */
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+.links a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover for better UX */
+}
+
+.about-me {
+  padding-top: var(--navbar-height); /* Adjust based on your navbar's height */
+}
+
+.profile-picture {
+  width: 100px; /* Set the width to 100px */
+  height: 100px; /* Set the height to 100px */
+  object-fit: cover;
+  display: block; /* Ensure the image is a block-level element to apply margin properties */
+  margin-top: 0; /* Align the top of the image with its container */
+  margin-left: 0; /* Align the left side of the image with its container */
+}
+
+
+.contact-section {
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: var(--light-sky-blue); /* Use your color palette */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--pale-azure); /* Use your color palette for hover state */
+}
+
+/* Media query for devices 1024px and smaller */
+@media (max-width: 1024px) {
+  .portfolio {
+    /* Adjust the portfolio layout for smaller screens */
+    gap: 15px;
+  }
+
+  .project-card {
+    /* Adjust project card size for better fit */
+    width: 150px;
+  }
+
+  .contact-form {
+    /* Adjust form width for better readability */
+    max-width: 90%;
+  }
+
+  /* Add any additional styles needed for this breakpoint */
+}
+
+/* Media query for devices 768px and smaller */
+@media (max-width: 768px) {
+  .portfolio {
+    /* Adjust the layout for tablet and smaller devices */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    /* Adjust project card size to take full width */
+    width: 80%;
+  }
+
+  .contact-form {
+    /* Make the form take full available width */
+    max-width: 100%;
+  }
+
+  /* Further adjust font sizes, paddings, or margins as needed */
+}
+
+/* Media query for devices 376px and smaller */
+@media (max-width: 376px) {
+  body {
+    /* Adjust the body padding or font size if necessary */
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .profile-picture {
+    /* Further reduce the profile picture size for very small devices */
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Adjust other elements as needed for better readability and usability on very small screens */
+}
