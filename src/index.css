@@ -25,17 +25,17 @@ code {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust the space between cards as needed */
+  gap: 20px;
   justify-content: center;
 }
 
 .project-card {
   position: relative;
-  width: 200px; /* Adjust based on desired size */
+  width: 200px;
   overflow: hidden;
   background-color: var(--pink-lavender); /* Background color for project cards */
   border: 2px solid var(--light-sky-blue); /* Border color for project cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding some shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .project-card img {
@@ -48,7 +48,7 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7); /* Consider using one of your palette colors with adjusted opacity */
+  background: rgba(0, 0, 0, 0.7); 
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -71,12 +71,12 @@ code {
 .links a {
   display: block;
   margin: 10px 0; /* Adjust spacing between links */
-  color: inherit; /* Ensures links use the same color as .links */
-  text-decoration: none; /* Optional: Removes underline from links */
+  color: inherit; 
+  text-decoration: none;
 }
 
 .links a:hover {
-  text-decoration: underline; /* Optional: Adds underline on hover for better UX */
+  text-decoration: underline; 
 }
 
 .about-me {
@@ -87,9 +87,9 @@ code {
   width: 100px; /* Set the width to 100px */
   height: 100px; /* Set the height to 100px */
   object-fit: cover;
-  display: block; /* Ensure the image is a block-level element to apply margin properties */
-  margin-top: 0; /* Align the top of the image with its container */
-  margin-left: 0; /* Align the left side of the image with its container */
+  display: block; 
+  margin-top: 0; 
+  margin-left: 0; 
 }
 
 
@@ -119,7 +119,7 @@ code {
 }
 
 .submit-btn {
-  background-color: var(--light-sky-blue); /* Use your color palette */
+  background-color: var(--light-sky-blue); 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -128,7 +128,7 @@ code {
 }
 
 .submit-btn:hover {
-  background-color: var(--pale-azure); /* Use your color palette for hover state */
+  background-color: var(--pale-azure); 
 }
 
 /* Media query for devices 1024px and smaller */
@@ -148,7 +148,7 @@ code {
     max-width: 90%;
   }
 
-  /* Add any additional styles needed for this breakpoint */
+ 
 }
 
 /* Media query for devices 768px and smaller */
@@ -169,7 +169,7 @@ code {
     max-width: 100%;
   }
 
-  /* Further adjust font sizes, paddings, or margins as needed */
+
 }
 
 /* Media query for devices 376px and smaller */
@@ -186,5 +186,4 @@ code {
     height: 80px;
   }
 
-  /* Adjust other elements as needed for better readability and usability on very small screens */
 }
